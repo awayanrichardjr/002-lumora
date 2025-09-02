@@ -12,6 +12,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  hr {
+    margin-inline: 1rem;
+  }
+}
+
 ul,
 ol {
   list-style-type: none;
