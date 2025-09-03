@@ -1,0 +1,86 @@
+.header {
+  padding: 1rem;
+  height: 400px;
+
+  position: relative;
+}
+
+.header :where(.heading1) {
+  font-size: 65px;
+  width: 600px;
+  padding-inline-end: 2rem;
+  border-radius: 2rem;
+
+  background-color: transparent;
+  -webkit-backdrop-filter: blur();
+  backdrop-filter: blur(5px);
+}
+
+.header :where(.heading-description) {
+  width: 300px;
+
+  background-color: transparent;
+  -webkit-backdrop-filter: blur();
+  backdrop-filter: blur(5px);
+}
+
+.header :where(.explore-btn) {
+  background-color: var(--object-color);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  z-index: 2;
+
+  transition: 0.2s;
+}
+.header :where(.explore-btn):hover {
+  background-color: black;
+}
+
+.header :where(.home) {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 2rem;
+
+  height: inherit;
+  z-index: -1;
+
+  width: 650px;
+  overflow: hidden;
+}
+
+/* clients */
+.header :where(.clients) {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+  width: fit-content;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur();
+  backdrop-filter: blur(5px);
+
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+}
+.header :where(.clients) ol,
+li {
+  display: flex;
+  align-items: center;
+}
+.header :where(.clients) img {
+  width: 30px;
+  border-radius: 50%;
+}
+.header :where(.clients) .description {
+  width: fit-content;
+  color: white;
+}

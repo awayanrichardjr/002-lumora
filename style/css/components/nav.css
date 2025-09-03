@@ -3,6 +3,8 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+
+  z-index: 1000;
 }
 .navigation :is(a) {
   color: black;
@@ -49,12 +51,14 @@
 .navigation :where(.profile) li:nth-child(1) {
   background-color: lightgrey;
   border-radius: 50%;
+  transition: 0.2s;
   a {
     padding: 0.5rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.2s;
     span {
       font-size: 20px;
     }
@@ -63,6 +67,9 @@
     color: var(--object-color);
     font-variation-settings: "FILL" 1;
   }
+}
+.navigation :where(.profile) li:nth-child(1):hover {
+  background-color: black;
 }
 
 .navigation :where(.profile) li:nth-child(2) {
