@@ -3,6 +3,7 @@
   height: 400px;
 
   position: relative;
+  /* background-color: red; */
 }
 
 .header :where(.heading1) {
@@ -48,7 +49,7 @@
   right: 1rem;
   border-radius: 2rem;
 
-  height: inherit;
+  height: calc(inherit - 1rem);
   z-index: -1;
 
   width: 650px;
