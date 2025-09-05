@@ -37,7 +37,6 @@
   width: 350px;
   height: 221.5px;
   background-color: white;
-  border-bottom-right-radius: 2rem;
   position: relative;
 }
 .header :where(.heading-description)::after {
