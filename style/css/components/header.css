@@ -35,7 +35,7 @@
 
 .header :where(.heading-description) {
   width: 350px;
-  height: inherit;
+  height: 221.5px;
   background-color: white;
   border-bottom-right-radius: 2rem;
   position: relative;
@@ -48,6 +48,17 @@
   background-color: transparent;
   box-shadow: -20px -10px 0 white;
   border-top-left-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 60px;
+}
+.header :where(.heading-description)::before {
+  position: absolute;
+  bottom: 0;
+  right: -60px;
+  content: "";
+  background-color: transparent;
+  box-shadow: -20px 10px 0 white;
+  border-bottom-left-radius: 50%;
   aspect-ratio: 1/1;
   width: 60px;
 }
